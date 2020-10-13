@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: Ping
+      ping:
+        data: pong
+
+    - name: Gather the package facts
+      package_facts:
+        manager: apt
